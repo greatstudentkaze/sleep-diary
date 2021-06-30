@@ -1,5 +1,3 @@
-import data from '../../data.json';
-
 import { createElement } from '../utils/create-element';
 import { createMonthSectionTemplate } from '../templates/month-section';
 import { createEntryTemplate } from '../templates/entry';

@@ -15,13 +15,14 @@ class SleepDiary {
     };
   }
 
-  init() {
-    this._fetchData();
+  async init() {
+    await this._fetchData();
     this._render();
   }
 
   async _fetchData() {
-    this._data = data;
+    const response = await fetch('../../data.json');
+    this._data = await response.json();
   }
 
   _render() {

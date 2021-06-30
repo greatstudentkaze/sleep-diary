@@ -33,17 +33,14 @@
   justify-content: center;
   max-width: 320px;
   margin: 0 auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px;
 }
 
 @media (min-width: 768px) {
   .sleep-diary-page__header {
     justify-content: flex-start;
-    max-width: none;
-    margin-right: 0;
+    max-width: 1260px;
     margin-bottom: 40px;
-    margin-left: 0;
   }
 }
 

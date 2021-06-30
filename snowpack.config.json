@@ -10,5 +10,8 @@
   "optimize": {
     "bundle": true,
     "minify": true
+  },
+  "buildOptions": {
+    "baseUrl": "./"
   }
 }

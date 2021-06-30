@@ -19,7 +19,7 @@ class SleepDiary {
   }
 
   async _fetchData() {
-    const response = await fetch('../../data.json');
+    const response = await fetch('data.json');
     this._data = await response.json();
   }
 

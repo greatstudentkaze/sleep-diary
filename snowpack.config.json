@@ -2,5 +2,13 @@
   "mount": {
     "dist": "/",
     "src": "/"
+  },
+  "plugins": [
+    ["@snowpack/plugin-babel"],
+    "@snowpack/plugin-webpack"
+  ],
+  "optimize": {
+    "bundle": true,
+    "minify": true
   }
 }

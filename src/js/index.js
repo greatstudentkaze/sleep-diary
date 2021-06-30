@@ -39,17 +39,39 @@ ${comment}
   `;
 };
 
+const createMonthSectionTemplate = ({ id, title, description }) => `
+  <section class="sleep-diary-page__section">
+    <h2 class="sleep-diary-page__title">${title}</h2>
+    <p class="sleep-diary-page__description">${description}</p>
+    <ul class="sleep-diary-page__list" data-month-id="${id}"></ul>
+  </section>
+`;
+
+const Selector = {
+  main: '.sleep-diary-page__main',
+  entriesList: '.sleep-diary-page__list',
+};
+
 const init = () => {
 
-  const Selector = {
-    entriesList: '.sleep-diary-page__list',
-  };
+  const mainElement = document.querySelector(Selector.main);
+  console.log();
 
-  const listElement = document.querySelector(Selector.entriesList);
-  const { entries } = data;
-  entries.forEach((entry) => {
-    const element = createElement(createEntryTemplate(entry));
-    listElement.appendChild(element);
+  const { months } = data;
+  if (!months) {
+    return;
+  }
+
+  months.forEach((month) => {
+    const monthSection = createElement(createMonthSectionTemplate(month));
+    const listElement = monthSection.querySelector(Selector.entriesList);
+
+    mainElement.appendChild(monthSection);
+
+    month.entries.forEach((entry) => {
+      const element = createElement(createEntryTemplate(entry));
+      listElement.appendChild(element);
+    });
   });
 
 };

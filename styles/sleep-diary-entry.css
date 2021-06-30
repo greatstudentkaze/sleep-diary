@@ -1,0 +1,49 @@
+.sleep-diary-entry {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  row-gap: 20px;
+  height: 100%;
+  padding: 40px 30px;
+
+  border: 1px solid var(--color-gray);
+  /*box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;*/
+  /*box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;*/
+  /*box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;*/
+  /*box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;*/
+  /*box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;*/
+  /*box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;*/
+}
+
+@media (min-width: 768px) {
+  .sleep-diary-entry {
+    padding: 40px 50px;
+  }
+}
+
+.sleep-diary-entry__header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sleep-diary-entry__title {
+  margin: 0;
+}
+
+.sleep-diary-entry__bedtime {
+  margin: 0;
+}
+
+.sleep-diary-entry__main {
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.sleep-diary-entry__note {
+  max-width: 300px;
+  margin: 0;
+
+  font: inherit;
+  white-space: pre-wrap;
+}

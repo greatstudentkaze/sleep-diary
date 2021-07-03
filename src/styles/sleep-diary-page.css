@@ -76,6 +76,10 @@
   padding-bottom: 20px;
 }
 
+.sleep-diary-page__section:not(:last-child) {
+  margin-bottom: 40px;
+}
+
 .sleep-diary-page__title {
   margin: 0;
   margin-bottom: 15px;

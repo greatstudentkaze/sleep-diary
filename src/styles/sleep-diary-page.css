@@ -12,9 +12,9 @@
   padding: 0;
 
   font-family: "Raleway", "Tahoma", sans-serif;
-  color: var(--color-black);
+  color: var(--font-color);
 
-  background-color: var(--color-white);
+  background-color: var(--color-secondary);
 
   cursor: default;
 }
@@ -136,7 +136,7 @@
 
 .sleep-diary-page__image {
   display: block;
-  width: 540px;
-  height: 517px;
+  width: 100%;
+  max-width: 540px;
   margin: 0 auto;
 }

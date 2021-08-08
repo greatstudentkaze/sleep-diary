@@ -3,3 +3,16 @@
   --color-black: #333333;
   --color-gray: #e2e2e2;
 }
+
+.theme-light {
+  /*--color-primary: #0060df;*/
+  --color-secondary: var(--color-white);
+  /*--color-accent: #fd6f53;*/
+  --font-color: var(--color-black);
+}
+.theme-dark {
+  /*--color-primary: #17ed90;*/
+  --color-secondary: var(--color-black);
+  /*--color-accent: #12cdea;*/
+  --font-color: var(--color-white);
+}

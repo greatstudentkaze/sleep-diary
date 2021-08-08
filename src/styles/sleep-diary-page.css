@@ -25,6 +25,7 @@
   margin-left: auto;
   padding-right: 20px;
   padding-left: 20px;
+  padding-bottom: 60px;
 }
 
 .sleep-diary-page__header {
@@ -133,6 +134,9 @@
   }
 }
 
-.sleep-diary-page__item {
-
+.sleep-diary-page__image {
+  display: block;
+  width: 540px;
+  height: 517px;
+  margin: 0 auto;
 }

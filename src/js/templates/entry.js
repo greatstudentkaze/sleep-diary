@@ -10,7 +10,7 @@ export const createEntryTemplate = (data) => {
   const endTime = bedtime.end.split(' ')[1];
 
   return `
-    <li class="sleep-diary-page__item">
+    <li>
       <div class="sleep-diary-entry">
         <header class="sleep-diary-entry__header">
           <h3 class="sleep-diary-entry__title">

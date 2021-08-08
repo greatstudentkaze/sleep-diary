@@ -2,7 +2,7 @@
 <html class="sleep-diary-page" lang="ru">
 <head>
   <meta charset="UTF-8">
-  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Дневник сна</title>
   <link rel="stylesheet" href="%PUBLIC_URL%/styles/index.css">
@@ -14,12 +14,20 @@
   <header class="sleep-diary-page__header">
     <h1 class="sleep-diary-page__heading">Дневник сна 🌙</h1>
     <p class="sleep-diary-page__period">
-      <time datetime="2021-06-14">14 июня</time> - <time datetime="2021-09-14">14 сентября</time>
+      <time datetime="2021-06-14">14 июня</time> - <del><time datetime="2021-09-14">14 сентября</time></del> <time datetime="2021-07-27">27 июля</time>
     </p>
   </header>
 
   <main class="sleep-diary-page__main">
     <!--          добавить ачивки спать больше 70% записей 8+ часов, выдержать месяц записей итд -->
+
+    <section class="sleep-diary-page__section">
+      <h2 class="sleep-diary-page__title">Эксперимент не удался</h2>
+      <p class="sleep-diary-page__description">
+        Последние записи еле выдавливал из себя. Не было настроения и было лень вовремя контролировать это все. Последнее время плохо спал.
+      </p>
+      <img class="sleep-diary-page__image" src="%PUBLIC_URL%/doesnt-matter.jpg" width="540" height="517" alt="что спишь, что не спишь, все равно бы поспал еще...">
+    </section>
   </main>
 
   <script type="module" src="%PUBLIC_URL%/js/index.js"></script>
